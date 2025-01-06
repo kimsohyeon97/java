@@ -1,14 +1,14 @@
 package ch05.sec05;
 
-public interface SubStringExample {
+public class SubStringExample {
 	public static void main(String[] args) {
 		String ssn = "880815-1234567";
 		
-		String firstNum = ssn.substring(0,6);
-		System.out.println(firstNum);
+		String intNum1 = ssn.substring(0,6);
+		String intNum2 = ssn.substring(7);
 		
-		String secondNum = ssn.substring(7);
-		System.out.println(secondNum);
+		System.out.println(intNum1);
+		System.out.println(intNum2);
 	}
 
 }
