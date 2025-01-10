@@ -9,9 +9,9 @@ public class IfNestedExample {
 		
 		if(score>=90) {
 			if(score>=95) {
-			grade="A+";
+			grade="PromotionExample+";
 		}else {
-			grade = "A";
+			grade = "PromotionExample";
 		}
 	}else {
 			if(score>=85) {

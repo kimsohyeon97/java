@@ -8,8 +8,8 @@ public class A {
 	public A(boolean b) {
 		
 	}
-	
-	A (int b){
+
+	A(int b){
 		
 	}
 	

@@ -7,7 +7,7 @@ public class SwitchValueExample {
 		int score1=	0;
 		
 		switch(grade) {
-		case "A":
+		case "PromotionExample":
 			score1 = 100;
 			break;
 		case"B":
@@ -21,7 +21,7 @@ public class SwitchValueExample {
 		System.out.println("score1 : " + score1);
 		
 		int score2=switch(grade) {
-		case "A" -> 100;
+		case "PromotionExample" -> 100;
 		case "B" -> {
 			int result=100-20;
 			yield result;

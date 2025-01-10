@@ -1,10 +1,10 @@
-package ch07.sec06.package2;
+package ch07.sec06.package1;
 
 import ch07.sec06.package1.A;
 
 public class C {
 	public void method() {
-		//A a = new A();
+		//PromotionExample a = new PromotionExample();
 		//a.field = "value";
 		//a.method();
 	}

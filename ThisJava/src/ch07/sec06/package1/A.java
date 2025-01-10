@@ -1,6 +1,7 @@
 package ch07.sec06.package1;
 
-public class A{
+public class A {
+	
 	protected String field;
 	
 	protected A() {
@@ -10,4 +11,5 @@ public class A{
 	protected void method() {
 		
 	}
+
 }
