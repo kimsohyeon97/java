@@ -1,7 +1,7 @@
 package sub8;
  /*
   * 날짜 : 2025/01/10
-  * 이름 : 한결
+  * 이름 : 김소현
   * 내용 : Java 인터페이스 실습하기
   */
 public class InterfaceTest {
