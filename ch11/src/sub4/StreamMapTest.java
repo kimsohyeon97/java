@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /* 날짜 : 2025/01/21
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 스트림 매핑 실습
  */
 
