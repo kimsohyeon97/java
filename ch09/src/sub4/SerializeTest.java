@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 
 /*
  * 날짜 : 2025/01/16
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 직렬화 실습하기
  */
 
