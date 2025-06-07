@@ -1,7 +1,7 @@
 package sub2;
 /*
  * 날짜 : 2025/01/06
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 메서드 실습하기
  */
 public class MethodTest {
