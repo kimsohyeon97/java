@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /*
  * 날짜 : 2025/01/03
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : 백준 1단계 3번
  */
 public class Test03 {
