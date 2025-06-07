@@ -7,7 +7,7 @@ import java.util.Set;
 
 /*
  * 날짜 : 2025/01/15
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 컬렉션 Set 실습하기
  */
 public class SetTest {
