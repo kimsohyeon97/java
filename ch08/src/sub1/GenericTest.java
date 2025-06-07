@@ -2,7 +2,7 @@ package sub1;
 
 /*
  * 날짜 : 2025/01/15
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 제네릭 클래스 실습하기
  */
 public class GenericTest {
