@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 /*
  * 날짜 : 2025/01/20
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 스레드풀 실습하기
  */
 
