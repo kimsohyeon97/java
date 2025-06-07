@@ -2,7 +2,7 @@ package sub2;
 
 /*
  * 날짜 : 2024/12/31
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 자료형 실습하기
  * 중요 int, long, double, boolean, String
  */
