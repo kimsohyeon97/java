@@ -1,7 +1,7 @@
 package sub3;
 /*
  * 날짜 : 2025/01/14
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java StringBuilderTest 클래스 실습하기
  */
 public class StringBuilderTest {
