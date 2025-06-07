@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /*
  * 날짜 : 2025/01/02
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 조건문 switch 실습하기
  */
 public class SwitchTest {
