@@ -1,7 +1,7 @@
 package step1;
 /*
  * 날짜 : 2025/01/03
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : 백준 1단계 2번
  */
 import java.util.Scanner;
