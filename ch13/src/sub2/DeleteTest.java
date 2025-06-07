@@ -6,7 +6,7 @@ import java.sql.Statement;
 
 /*
  * 날짜 : 2025/01/22
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java Delete 실습하기
  */
 
