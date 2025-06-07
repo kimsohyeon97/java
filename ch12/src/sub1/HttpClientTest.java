@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 /*
  * 날짜 : 2025/01/22
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java Http 통신 실습하기
  */
 
