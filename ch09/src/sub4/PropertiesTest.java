@@ -8,7 +8,7 @@ import java.util.Properties;
 
 /*
  * 날짜 : 2025/01/16
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java Properties(Map 개열) 실습하기 (자주 사용)
  */
 
