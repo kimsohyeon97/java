@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * 날짜 : 2025/01/27
- * 이름 : 김철학
+ * 이름 : 김소현
  * 내용 : Java CRUD 실습하기
  */
 public class AppMain {
