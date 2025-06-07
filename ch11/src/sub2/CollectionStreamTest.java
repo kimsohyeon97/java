@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* 날짜 : 2025/01/21
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 컬렉션 스트림 실습
  */
 
