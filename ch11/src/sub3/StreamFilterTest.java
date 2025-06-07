@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /* 날짜 : 2025/01/21
- * 이름 : 한결
+ * 이름 : 김소현
  * 내용 : Java 스트림 필터 실습
  */
 
