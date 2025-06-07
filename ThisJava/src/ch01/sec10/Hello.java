@@ -1,6 +1,6 @@
 package ch01.sec10;
 /**
- * @author 한결
+ * @author 김소현
  */
 /*
  장제목: 1장 자바 시작하기
