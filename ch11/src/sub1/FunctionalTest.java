@@ -1,10 +1,10 @@
 package sub1;
 
-/*
- * 날짜 : 2025/01/21
- * 이름 : 김소현
+/* 날짜 : 2025/01/21
+ * 이름 : 한결
  * 내용 : Java 함수형 프로그래밍 실습
  */
+
 interface Person {
 	public void hello();
 }
@@ -37,26 +37,13 @@ public class FunctionalTest {
 		
 		// 함수형 프로그래밍
 		Person teacher = () -> {
-			System.out.println("Hello Teacher!");
+		System.out.println("Hello Teacher!");
 		};
 		
 		teacher.hello();
-		
-		
 	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -6,17 +6,17 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-/**
- * 날짜 : 2025/01/23
- * 이름 : 김소현
+/*
+ * 날짜 : 2025/01/22
+ * 이름 : 한결
  * 내용 : Java 트랜잭션 실습하기
  */
-public class TransactionTest {
 
+public class TransactionTest {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("에러를 발생하시겠습니까?");
+		System.out.println("에러를 발생하시겠습니까?");
 		
 		int answer = sc.nextInt();
 		
@@ -35,10 +35,10 @@ public class TransactionTest {
 			// 2단계 - 데이터베이스 접속
 			conn = DriverManager.getConnection(host, user, pass);
 			
-			// 트랜잭션 자동커밋 해제
+			// 트랜잭션 자동 커밋 해제
 			conn.setAutoCommit(false);
-						
-			// 3단계 - SQL실행 객체 생성
+	
+			// 3단계 - SQL 실행 객체 생성
 			String sql1 = "update `bank_account` set `a_balance` = `a_balance` - 10000 where `a_no`=?";
 			String sql2 = "update `bank_account` set `a_balance` = `a_balance` + 10000 where `a_no`=?";
 			
@@ -59,13 +59,14 @@ public class TransactionTest {
 			
 			// 작업확정(데이터베이스 작업 반영)
 			conn.commit();
+						
+			// 5단계 - 조회 결과 처리
 			
-			// 5단계 - 조회결과 처리
 			// 6단계 - 데이터베이스 종료
+			conn.close();
 			psmt1.close();
 			psmt2.close();
-			conn.close();
-			
+						
 		}catch (Exception e) {
 			e.printStackTrace();
 			
@@ -75,27 +76,8 @@ public class TransactionTest {
 			} catch (SQLException e1) {
 				e1.printStackTrace();
 			}
-			
 		}
 		
 		System.out.println("트랜잭션 실습 완료...");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

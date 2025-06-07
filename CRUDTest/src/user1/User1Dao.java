@@ -22,12 +22,12 @@ public class User1Dao {
 		return instance;
 	}
 	private User1Dao() {}
-	
+
 	// DB정보
 	private final String HOST = "jdbc:mysql://localhost:3306/studydb";
 	private final String USER = "root";
 	private final String PASS = "1234";
-	
+
 	// 커넥션
 	public Connection getConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -38,10 +38,10 @@ public class User1Dao {
 	private Statement stmt = null;
 	private PreparedStatement psmt = null;
 	private ResultSet rs = null;
-	
+
 	// 기본 CRUD 메서드
 	public void insertUser1(User1 user) {
-		
+
 		try {
 			conn = getConnection();
 			psmt = conn.prepareStatement(SQL.INSERT_USER1);
@@ -51,23 +51,23 @@ public class User1Dao {
 			psmt.setInt(4, user.getAge());
 			psmt.executeUpdate();
 			closeAll();
-			
+
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public User1 selectUser1(String uid) {
-		
+
 		User1 user = null;
-		
+
 		try {
 			conn = getConnection();
 			psmt = conn.prepareStatement(SQL.SELECT_USER1);
 			psmt.setString(1, uid);
-			
+
 			rs = psmt.executeQuery();
-			
+
 			// SELECT의 결과가 0 또는 1이기 때문에 while 대신 if문으로 결과 처리
 			if(rs.next()) { 
 				user = new User1();
@@ -77,22 +77,22 @@ public class User1Dao {
 				user.setAge(rs.getInt(4));
 			}
 			closeAll();		
-			
+
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
 		return user;
 	}
-	
+
 	public List<User1> selectUser1List() {
-		
+
 		List<User1> list = new ArrayList<>();
-		
+
 		try {
 			conn = getConnection();
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(SQL.SELECT_USER1_LIST);
-			
+
 			while(rs.next()) {
 				User1 user = new User1();
 				user.setUid(rs.getString(1));
@@ -107,7 +107,7 @@ public class User1Dao {
 		}
 		return list;
 	}
-	
+
 	public void updateUser1(User1 user) {
 		try {
 			conn = getConnection();
@@ -122,7 +122,7 @@ public class User1Dao {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void deleteUser1(String uid) {
 		try {
 			conn = getConnection();
@@ -130,42 +130,29 @@ public class User1Dao {
 			psmt.setString(1, uid);
 			psmt.executeUpdate();
 			closeAll();
-			
+
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	// 통합 close(자원해제) 메서드
 	public void closeAll() throws SQLException {
-		
+
 		if(rs != null) {
 			rs.close();			
 		}
-		
+
 		if(stmt != null) {
 			stmt.close();
 		}
-		
+
 		if(psmt != null) {
 			psmt.close();
 		}
-		
+
 		if(conn != null) {
 			conn.close();
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

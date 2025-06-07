@@ -9,10 +9,12 @@ import java.net.URL;
 
 /*
  * 날짜 : 2025/01/22
- * 이름 : 김소현
+ * 이름 : 한결
  * 내용 : Java Http 통신 실습하기
  */
+
 public class HttpTest {
+
 	public static void main(String[] args) {
 		
 		FileOutputStream fos = null;
@@ -21,26 +23,29 @@ public class HttpTest {
 		try {
 			URL url = new URL("https://google.com");
 			
-			br = new BufferedReader(new InputStreamReader(url.openStream()));
-			fos = new FileOutputStream("./result.txt");
-			
-			String line = null;
-			
-			while((line = br.readLine()) != null) {
-				System.out.println(line);
-				fos.write(line.getBytes());
+			try {
+				br = new BufferedReader(new InputStreamReader(url.openStream()));
+				fos = new FileOutputStream("./result.txt");
+				
+				String line = null;
+				
+				while((line = br.readLine()) != null) {
+					System.out.println(line);
+					fos.write(line.getBytes());
+				}
+				
+				br.close();
+				fos.close();
+				
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
-			
-			br.close();
-			fos.close();
+
 			
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
 		}
 		
-		System.out.println("HTTP 통신 종료...");
-		
+		System.out.println("프로토콜 통신 종료...");
 	}
 }

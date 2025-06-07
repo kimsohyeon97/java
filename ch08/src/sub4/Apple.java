@@ -19,4 +19,5 @@ public class Apple {
 		System.out.println("원산지 : " + country);
 		System.out.println("가격 : " + price);
 	}
+	
 }

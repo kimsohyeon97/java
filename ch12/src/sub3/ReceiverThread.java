@@ -6,21 +6,20 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 // 수신처리 스레드 클래스
-public class ReceiverThread extends Thread {
-	
+public class ReceiverThread extends Thread{
+
 	private Socket socket;
-	
+
 	public ReceiverThread(Socket socket) {
 		this.socket = socket;
 	}
-	
+
 	@Override
 	public void run() {
-		
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			
-			while(true) {				
+			while(true) {
 				String msg = br.readLine();
 				
 				if(msg == null) {
@@ -30,6 +29,7 @@ public class ReceiverThread extends Thread {
 				System.out.println(msg);
 			}
 			
+
 		}catch(Exception e) {
 			e.printStackTrace();
 		}finally {
@@ -38,9 +38,7 @@ public class ReceiverThread extends Thread {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-		}
-		
-	}
-	
 
+		}
+	}
 }

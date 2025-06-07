@@ -1,8 +1,7 @@
 package sub1;
 
-/*
- * 날짜 : 2025/01/21
- * 이름 : 김소현
+/* 날짜 : 2025/01/21
+ * 이름 : 한결
  * 내용 : Java 람다식 실습
  */
 
@@ -31,13 +30,14 @@ interface E {
 	public double method(double num);
 }
 
-public class LambdaTest {
 
+
+public class LambdaTest {
 	public static void main(String[] args) {
 		
 		// 람다식 정의
 		A a1 = (int a, int b) -> {
-			int c = a + b;			
+			int c = a + b;
 			return c;
 		};
 		
@@ -51,9 +51,9 @@ public class LambdaTest {
 		int r2 = a2.method(2, 3);
 		int r3 = a3.method(3, 4);
 		
-		System.out.println("r1 : " + r1);
-		System.out.println("r2 : " + r2);
-		System.out.println("r3 : " + r3);
+		System.out.println(r1);
+		System.out.println(r2);
+		System.out.println(r3);
 		
 		B b1 = (double a) -> {
 			System.out.println("a : " + a);
@@ -96,7 +96,7 @@ public class LambdaTest {
 		double n1 = e1.method(1.2);
 		double n2 = e2.method(1.8);
 		double n3 = e3.method(2.5);
-		
+
 		System.out.println("n1 : " + n1);
 		System.out.println("n2 : " + n2);
 		System.out.println("n3 : " + n3);
@@ -104,8 +104,7 @@ public class LambdaTest {
 		// 람다식을 이용한 스레드
 		Runnable run = () -> {
 			
-			for(int i=0 ; i<10 ; i++) {
-				
+			for(int i=0; i<10; i++) {
 				System.out.println("작업 스레드 실행...");
 				
 				try {
@@ -119,8 +118,7 @@ public class LambdaTest {
 		Thread thread = new Thread(run);
 		thread.start();
 		
-		for(int i=0 ; i<10 ; i++) {
-			
+		for(int i=0; i<10; i++) {
 			System.out.println("메인 스레드 실행...");
 			
 			try {
@@ -130,18 +128,11 @@ public class LambdaTest {
 			}
 		}
 		
-		System.out.println();
+		System.out.println("프로그램 종료...");
 		
 	}
-	
+
 }
-
-
-
-
-
-
-
 
 
 

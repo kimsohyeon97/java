@@ -1,10 +1,9 @@
 package sub8;
-
-/**
- * 날짜 : 2025/01/10
- * 이름 : 김소현
- * 내용 : Java 인터페이스 실습하기
- */
+ /*
+  * 날짜 : 2025/01/10
+  * 이름 : 한결
+  * 내용 : Java 인터페이스 실습하기
+  */
 public class InterfaceTest {
 
 	public static void main(String[] args) {
@@ -29,10 +28,12 @@ public class InterfaceTest {
 		
 		socket.switchOn();
 		socket.switchOff();
-				
+		
+		
 		// 인터페이스 예제3 - 다중 상속 효과
 		SmartTv stv = new SmartTv();
 		stv.process();
+		
 		
 	}
 }

@@ -2,9 +2,10 @@ package sub5;
 
 /*
  * 날짜 : 2025/01/09
- * 이름 : 김소현
+ * 이름 : 한결
  * 내용 : Java Overriding 실습하기
  */
+
 class AAA {
 	public void method1() {
 		System.out.println("AAA:method1...");
@@ -16,13 +17,12 @@ class AAA {
 		System.out.println("AAA:method3...");
 	}
 }
-
+	
 class BBB extends AAA {
 	@Override
 	public void method2() {
 		System.out.println("BBB:method2...");
 	}
-	
 	//Overload
 	public void method3(int a) {
 		System.out.println("BBB:method3...");
@@ -44,7 +44,9 @@ class CCC extends BBB {
 	}
 }
 
+
 public class OverridingTest {
+
 	public static void main(String[] args) {
 		
 		// 오버라이드 메서드 실습
@@ -66,13 +68,6 @@ public class OverridingTest {
 		bongo.load(10);
 		bongo.speedUp(80);
 		bongo.show();
+		
 	}
 }
-
-
-
-
-
-
-
-

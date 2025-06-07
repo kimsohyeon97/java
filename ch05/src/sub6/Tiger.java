@@ -3,13 +3,15 @@ package sub6;
 public class Tiger extends Animal {
 
 	@Override
-	public void move() {
+	public void move() {	
 		System.out.println("Tiger run...");
 	}
 	
-	@Override
-	public void hunt() {
+	public void hunt() {	
 		System.out.println("Tiger hunt...");
+		
 	}
+	
+	
 	
 }

@@ -8,9 +8,10 @@ import java.util.Properties;
 
 /*
  * 날짜 : 2025/01/16
- * 이름 : 김소현
- * 내용 : Java Properties 실습하기
+ * 이름 : 한결
+ * 내용 : Java Properties(Map 개열) 실습하기 (자주 사용)
  */
+
 public class PropertiesTest {
 
 	public static void main(String[] args) {
@@ -23,8 +24,8 @@ public class PropertiesTest {
 		
 		System.out.println(prop);
 		
-		
-		String target = "C:\\Users\\lotte6\\Desktop\\Fruit.properties"; // 확장자 properties
+		// 프로퍼티 파일 저장(직렬화)
+		String target = "C:\\Users\\lotte6\\Desktop\\Fruit.properties"; // 확장자 properties, 개발자가 사용하는 파일(텍스트 파일로 열 수 있음)
 		
 		try {
 			// 스트림 생성
@@ -42,16 +43,14 @@ public class PropertiesTest {
 			e.printStackTrace();
 		}
 		
-		//////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////
 		// 프로퍼티 읽기(역직렬화)
-		//////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////
 		String source = "C:\\Users\\lotte6\\Desktop\\City.properties";
 		
-		
 		Properties sourceProp = new Properties();
-
+		
 		try {
-			// 스트림 생성
 			FileInputStream fis = new FileInputStream(source);
 			
 			// 프로퍼티 파일 읽기
@@ -60,12 +59,13 @@ public class PropertiesTest {
 			// 스트림 해제
 			fis.close();
 			
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		
 		System.out.println(sourceProp);
 		System.out.println("kor 키값 : " + sourceProp.getProperty("kor"));
 		System.out.println("usa 키값 : " + sourceProp.getProperty("usa"));
@@ -73,8 +73,15 @@ public class PropertiesTest {
 		System.out.println("chi 키값 : " + sourceProp.getProperty("chi"));
 		
 		
+		
+		
+		
+		
 	}
 }
+
+
+
 
 
 

@@ -1,19 +1,18 @@
 package sub3;
-
 /*
  * 날짜 : 2025/01/14
- * 이름 : 김소현
- * 내용 : Java StringBuilder 클래스 실습하기
+ * 이름 : 한결
+ * 내용 : Java StringBuilderTest 클래스 실습하기
  */
 public class StringBuilderTest {
 
 	public static void main(String[] args) {
-		
+			
 		// String 객체의 immutable(불변성) 특성으로 메모리 낭비가 발생
 		String str = "Hello";
 		System.out.println("str : " + str);
 		System.out.println("str 주소 : " + System.identityHashCode(str));
-		
+				
 		str += "World"; // 새로운 문자열 삽입
 		System.out.println("str : " + str);
 		System.out.println("str 주소 : " + System.identityHashCode(str));
@@ -27,7 +26,6 @@ public class StringBuilderTest {
 		System.out.println("sb : " + sb);
 		System.out.println("sb 주소 : " + System.identityHashCode(sb));
 		
+		// append 말고도 여러가지가 있으니 학습자료 참고
 	}
 }
-
-

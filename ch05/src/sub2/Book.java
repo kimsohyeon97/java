@@ -2,45 +2,41 @@ package sub2;
 
 public class Book {
 	
-	// 속성
-	private String title;
+	//속성
+	private String title; // 책 제목
 	private String author;
 	private String isbn;
-	private int availableCopies;
+	private int availableCopies; // 이용 가능한 복사본 수
 	
-	
-	// 생성자
+	// 생성자 (마우스 오른쪽 - 소스 - 유즈 뭐시기 하면 자동 생성 됨)
 	public Book(String title, String author, String isbn, int availableCopies) {
-		this.title = title;
-		this.author = author;
-		this.isbn = isbn;
-		this.availableCopies = availableCopies;
+	this.title = title;
+	this.author = author;
+	this.isbn = isbn;
+	this.availableCopies = availableCopies;
+		
 	}
 	
-	// 기능
 	public boolean borrowBook() {
-		
 		if(availableCopies > 0) {
 			availableCopies--;
-			return true;			
+			return true;
 		}else {
 			return false;
 		}
-		
 	}
 	
-	public void returnBook() {
+	public void returnbook(int availableCopies) {
 		availableCopies++;
 	}
 	
 	public void show() {
-		System.out.println("도서명 : " + title);
-		System.out.println("작가명 : " + author);
-		System.out.println("도서번호 : " + isbn);
-		System.out.println("도서 복사본 수 : " + availableCopies);
+		System.out.println("도서명 : " + this.title);
+		System.out.println("작가명 : " + this.author);
+		System.out.println("도서번호 : " + this.isbn);
+		System.out.println("도서 복사본 : " + this.availableCopies);
 	}
 	
-	// Getter, Setter
 	public String getTitle() {
 		return title;
 	}
@@ -55,25 +51,10 @@ public class Book {
 		this.author = author;
 	}
 	
-	public String getIsbn() {
-		return isbn;
-	}
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
-	}
+	//get
+	//set
 	
-	public int getAvailableCopies() {
-		return availableCopies;
-	}
-	public void setAvailableCopies(int availableCopies) {
-		this.availableCopies = availableCopies;
-	}
+	//get
+	//set
+	
 }
-
-
-
-
-
-
-
-

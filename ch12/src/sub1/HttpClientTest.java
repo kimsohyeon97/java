@@ -8,11 +8,12 @@ import java.net.http.HttpResponse;
 
 /*
  * 날짜 : 2025/01/22
- * 이름 : 김소현
+ * 이름 : 한결
  * 내용 : Java Http 통신 실습하기
  */
-public class HttpClientTest {
-	
+
+public class HttpclientTest {
+
 	public static void main(String[] args) {
 		
 		HttpClient httpClient = HttpClient.newHttpClient();
@@ -24,15 +25,19 @@ public class HttpClientTest {
 								.build();
 		
 		try {
-			HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+			HttpResponse<String> response =  httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 			
 			System.out.println("상태코드 : " + response.statusCode());
 			System.out.println("응답내용 : " + response.body());
 			
-		} catch (IOException | InterruptedException e) {
+		
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		
 		System.out.println("HTTP 통신 끝...");
+		
 	}
 }

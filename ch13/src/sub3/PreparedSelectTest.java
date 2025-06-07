@@ -10,12 +10,12 @@ import java.util.List;
 import sub2.User1;
 
 /*
- * 날짜 : 2025/01/23
- * 이름 : 김소현
- * 내용 : Java CRUD 실습하기 
+ * 날짜 : 2025/01/22
+ * 이름 : 한결
+ * 내용 : Java CRUD 실습하기
  */
-public class PreparedSelectTest {
 
+public class PreparedSelectTest {
 	public static void main(String[] args) {
 		
 		// DB 정보
@@ -35,7 +35,7 @@ public class PreparedSelectTest {
 			// 3단계 - SQL 실행 객체 생성
 			String sql = "select * from `user1`";
 			PreparedStatement psmt = conn.prepareStatement(sql);
-						
+			
 			// 4단계 - SQL 실행
 			ResultSet rs = psmt.executeQuery();
 			
@@ -44,18 +44,18 @@ public class PreparedSelectTest {
 				
 				User1 user1 = new User1();
 				user1.setUid(rs.getString(1));
-				user1.setName(rs.getString(2));
-				user1.setHp(rs.getString(3));
-				user1.setAge(rs.getInt(4));
+				user1.setUid(rs.getString(2));
+				user1.setUid(rs.getString(3));
+				user1.setUid(rs.getString(4));
 				
-				users.add(user1);
+				users.add(user1);	
+				
 			}
-			
 			// 6단계 - 데이터베이스 종료
 			rs.close();
 			psmt.close();
-			conn.close();			
-			
+			conn.close();
+
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -66,19 +66,7 @@ public class PreparedSelectTest {
 		}
 		
 		System.out.println("Select 완료...");
-	}
+		
+		
+	}	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

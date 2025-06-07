@@ -4,9 +4,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-/**
+
+/*
  * 날짜 : 2025/01/15
- * 이름 : 김소현
+ * 이름 : 한결
  * 내용 : Java 컬렉션 Set 실습하기
  */
 public class SetTest {
@@ -30,7 +31,7 @@ public class SetTest {
 		Iterator<Integer> it = set.iterator();
 		
 		while(it.hasNext()) {
-			// 다음 데이터 존재할 때 까지 반복실행 
+			// 다음 데이터가 존재할 때 까지 반복 실행
 			System.out.println(it.next());
 		}
 		
@@ -38,16 +39,7 @@ public class SetTest {
 		for(int num : set) {
 			System.out.println(num);
 		}
+			
+		
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -1,8 +1,7 @@
 package sub4;
-
 /*
  * 날짜 : 2025/01/09
- * 이름 : 김소현
+ * 이름 : 한결
  * 내용 : Java 클래스 상속 실습하기
  */
 
@@ -13,13 +12,15 @@ class Parent {
 	public Parent(int num1, int num2) {
 		this.num1 = num1;
 		this.num2 = num2;
-	}	
-	public int plus() {
-		return num1 + num2;
+	}
+		
+		public int plus() {
+			return num1 + num2;
 	}
 }
 
-class Child extends Parent {	
+class Child extends Parent {
+	
 	private int num3;
 	private int num4;
 	
@@ -28,16 +29,16 @@ class Child extends Parent {
 		this.num3 = num3;
 		this.num4 = num4;
 	}
-
+	
 	public int minus() {
 		return num3 - num4;
 	}
 }
 
 public class InheritTest {
-	
+
 	public static void main(String[] args) {
-	
+		
 		// 상속 객체 생성
 		Child child = new Child(1, 2, 3, 4);
 		int result1 = child.plus();
@@ -51,8 +52,7 @@ public class InheritTest {
 		sonata.speedUp(80);
 		sonata.turbo();
 		sonata.speedDown(20);
-		//sonata.name = "아반테";
-		sonata.show();		
+		sonata.show();
 		
 		Truck bongo = new Truck("봉고", "남색", 0, 0);
 		bongo.load(100);
@@ -68,25 +68,13 @@ public class InheritTest {
 		kb.sell(5, 60000);
 		kb.show();
 		
-		// Person 상속 객체 생성
-		Doctor doctor = new Doctor("김유신", 33, "소아과");
-		Engineer engineer = new Engineer("김춘추", 34, "소프트웨어");
+		//Person 상속 객체 생성
+		Doctor doctor = new Doctor("김유신", 30, "의사");
+		Engineer engineer = new Engineer("김춘추", 20, "소프트웨어");
 		
 		doctor.work();
 		engineer.work();
 		
+
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-

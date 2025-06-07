@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 /*
  * 날짜 : 2025/01/13
- * 이름 : 김소현
- * 내용 : Java Throws 예외처리 실습하기
+ * 이름 : 한결
+ * 내용 : Java Throws 예외처리 실습하기 (예외 선언하기, 던질 가능성이 있다는 것을 선언)
  */
 public class ThrowsTest {
 
@@ -18,6 +18,7 @@ public class ThrowsTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 		System.out.println("프로그램 정상 종료...");
 	}
 	
@@ -38,8 +39,3 @@ public class ThrowsTest {
 		System.out.println("result : " + result);
 	}	
 }
-
-
-
-
-

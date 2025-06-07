@@ -33,8 +33,3 @@ public class StockAccount extends Account {
 		System.out.println("주식가격 : " + this.price);
 	}
 }
-
-
-
-
-

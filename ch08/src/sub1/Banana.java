@@ -15,5 +15,4 @@ public class Banana {
 		return "Banana [country=" + country + ", price=" + price + "]";
 	}
 	
-	
 }

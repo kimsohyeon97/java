@@ -6,12 +6,13 @@ import java.util.List;
 
 import sub1.Apple;
 
-/**
+/*
  * 날짜 : 2025/01/15
- * 이름 : 김소현
+ * 이름 : 한결
  * 내용 : Java 컬렉션 List 실습하기
  */
 public class ListTest {
+
 	public static void main(String[] args) {
 		
 		// List(ArrayList) 생성
@@ -26,17 +27,17 @@ public class ListTest {
 		System.out.println(list);
 		
 		// 데이터 삽입
-		list.add(1, 6); // 인덱스 1번 데이터 삽입
+		list.add(1, 6); // 인덱스 1번 자리에 6을 삽입. 원래 있던 리스트들은 뒤로 밀려남.
 		System.out.println(list);
 		
 		// 데이터 제거
-		list.remove(1); // 인덱스 1번 데이터 삭제
+		list.remove(1); // 인덱스 1번 자리의 데이터가 삭제됨.
 		System.out.println(list);
 		
 		// 데이터 참조
-		System.out.println("list 1번째 원소 : " + list.get(0));
-		System.out.println("list 2번째 원소 : " + list.get(1));
-		System.out.println("list 4번째 원소 : " + list.get(3));
+		System.out.println("list 1번 원소 : " + list.get(0));
+		System.out.println("list 2번 원소 : " + list.get(1));
+		System.out.println("list 4번 원소 : " + list.get(3));
 		
 		// 리스트 크기
 		System.out.println("list 크기 : " + list.size());
@@ -57,13 +58,12 @@ public class ListTest {
 		System.out.println(persons);
 		
 		// 마지막 '정약용' 추가
-		persons.add("정약용");
+		persons.add(5, "정약용");
 		System.out.println(persons);
 		
 		// 강감찬, 이순신 사이에 '이성계' 추가
 		persons.add(4, "이성계");
 		System.out.println(persons);
-		
 		// 김유신, 김춘추 사이에 '선덕여왕' 추가
 		persons.add(persons.indexOf("김춘추"), "선덕여왕");
 		System.out.println(persons);
@@ -72,7 +72,6 @@ public class ListTest {
 		persons.remove(3);
 		persons.add(3, "왕건");
 		System.out.println(persons);
-		
 		
 		// 객체 리스트
 		List<Apple> apples = new ArrayList<>();
@@ -86,33 +85,23 @@ public class ListTest {
 		apples.add(a3);
 		
 		for(Apple apple : apples) {
-			System.out.println(apple);	
+			System.out.println(apple);
 		}
-		
-		// LinkedList 실습
+
+		// LinkedList
 		List<String> cities = new LinkedList<>();
 		cities.add("서울");
 		cities.add("대전");
 		cities.add("대구");
 		cities.add("부산");
 		cities.add("광주");
+		
 		System.out.println(cities);
 		
 		cities.add(1, "수원");
 		cities.addFirst("인천");
 		cities.addLast("울산");
 		System.out.println(cities);
-		
-		
+			
 	}
 }
-
-
-
-
-
-
-
-
-
-

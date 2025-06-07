@@ -1,7 +1,7 @@
 package sub8;
 
 public class Tv {
-
+	
 	public void powerOn() {
 		System.out.println("Tv powerOn...");
 	}
@@ -9,5 +9,5 @@ public class Tv {
 	public void powerOff() {
 		System.out.println("Tv powerOff...");
 	}
-	
+
 }

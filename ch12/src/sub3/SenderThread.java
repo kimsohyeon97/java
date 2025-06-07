@@ -6,9 +6,8 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-// 송신처리 스레드 클래스
-public class SenderThread extends Thread {
-	
+public class SenderThread extends Thread{
+
 	private Socket socket;
 	
 	public SenderThread(Socket socket) {
@@ -17,13 +16,12 @@ public class SenderThread extends Thread {
 	
 	@Override
 	public void run() {
-		
 		try {
+			
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			PrintWriter writer = new PrintWriter(socket.getOutputStream());
 			
 			while(true) {
-				
 				String msg = br.readLine();
 				
 				if(msg.equals("bye")) {
@@ -32,21 +30,16 @@ public class SenderThread extends Thread {
 				
 				writer.println(msg);
 				writer.flush();
-			}
+			}		
 			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}finally {
 			try {
 				socket.close();
-			} catch (IOException e) {
+			}catch(IOException e) {
 				e.printStackTrace();
 			}
 		}
 	}
 }
-
-
-
-
-

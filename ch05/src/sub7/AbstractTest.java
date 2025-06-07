@@ -2,13 +2,13 @@ package sub7;
 
 /*
  * 날짜 : 2025/01/10
- * 이름 : 김소현
+ * 이름 : 한결
  * 내용 : Java 추상클래스 실습하기
  */
 public class AbstractTest {
 	public static void main(String[] args) {
 		
-		// 추상클래스는 객체 생성X
+		// 추상클래스는 직접 객체 생성X
 		//Animal animal = new Animal();
 		
 		Animal a1 = new Tiger();

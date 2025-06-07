@@ -1,9 +1,8 @@
 package sub1;
-
 /*
  * 날짜 : 2025/01/07
- * 이름 : 김소현
- * 내용 : Java 클래스 실습하기 
+ * 이름 : 한결
+ * 내용 : Java 클래스 실습하기
  */
 public class ClassTest {
 
@@ -17,7 +16,7 @@ public class ClassTest {
 		sonata.color = "흰색";
 		sonata.speed = 0;
 		
-		// 객체 상호작용
+		//객체 상호작용
 		sonata.speedUp(100);
 		sonata.speedDown(20);
 		sonata.show();
@@ -29,7 +28,7 @@ public class ClassTest {
 		avante = new Car();
 		
 		// 객체 초기화
-		avante.name = "아반테";
+		avante.name = "아반떼";
 		avante.color = "흰색";
 		avante.speed = 10;
 		
@@ -38,7 +37,7 @@ public class ClassTest {
 		avante.speedDown(20);
 		avante.show();
 		
-		// Account 객체 생성과 초기화
+		//Account 객체 생성
 		Account kb = new Account();
 		kb.bank = "국민은행";
 		kb.id = "110-12-1101";
@@ -50,36 +49,24 @@ public class ClassTest {
 		kb.show();
 		
 		/*
-		<출력>
-		은행명 : 우리은행
-		계좌번호 : 110-11-1021
-		입금주 : 김춘추
-		현재잔액 : 15000
-		*/
-		Account wr = new Account();
-		wr.bank = "우리은행";
-		wr.id = "110-11-1021";
-		wr.name = "김춘추";
-		wr.balance = 10000;
+		 <출력>
+		 은행명 : 우리은행
+		 계좌번호 : 110-11-1021
+		 입금주 : 김춘추
+		 현재잔액 : 15000
+		 */
 		
-		wr.deposit(10000);
-		wr.withdraw(5000);
-		wr.show();
+		Account woori = new Account();
 		
+		woori.bank = "우리은행";
+		woori.id = "110-11-1021";
+		woori.name = "김춘추";
+		woori.balance = 10000;
+		
+		woori.deposit(10000);
+		woori.withdraw(5000);
+		woori.show();
+		
+			
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

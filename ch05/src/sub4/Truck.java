@@ -1,11 +1,12 @@
 package sub4;
 
-public class Truck extends Car {
-	
-	private int capacity;
+public class Truck extends Car{
 
+	private int capacity;
+	
 	public Truck(String name, String color, int speed, int capacity) {
 		super(name, color, speed);
+
 		this.capacity = capacity;
 	}
 	
@@ -14,7 +15,7 @@ public class Truck extends Car {
 	}
 	
 	public void show() {
-		super.show(); // 부모클래스 show() 호출
+		super.show();
 		System.out.println("적재용량 : " + this.capacity);
 	}
 

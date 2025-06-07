@@ -11,7 +11,7 @@ public class User1 {
 	private String name;
 	private String hp;
 	private int age;
-	
+
 	public User1() {}
 	public User1(String uid, String name, String hp, int age) {
 		this.uid = uid;
@@ -19,7 +19,7 @@ public class User1 {
 		this.hp = hp;
 		this.age = age;
 	}
-	
+
 	public String getUid() {
 		return uid;
 	}
@@ -48,5 +48,5 @@ public class User1 {
 	public String toString() {
 		return "User1 [uid=" + uid + ", name=" + name + ", hp=" + hp + ", age=" + age + "]";
 	}
-	
+
 }

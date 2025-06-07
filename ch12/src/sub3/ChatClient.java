@@ -4,9 +4,10 @@ import java.net.Socket;
 
 /*
  * 날짜 : 2025/01/22
- * 이름 : 김소현
+ * 이름 : 한결
  * 내용 : Java 채팅 프로그래밍 실습
  */
+
 public class ChatClient {
 	public static void main(String[] args) {
 		
@@ -27,7 +28,9 @@ public class ChatClient {
 			e.printStackTrace();
 		}
 		
-		//System.out.println("Client 채팅 종료...");
+		// System.out.println("Client 채팅 종료...");
+		
 		
 	}
+
 }

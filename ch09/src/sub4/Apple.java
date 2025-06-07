@@ -3,7 +3,7 @@ package sub4;
 import java.io.Serializable;
 
 // 직렬화를 위해 Serializable 인터페이스 구현
-public class Apple implements Serializable {
+public class Apple implements Serializable{
 
 	private String country;
 	private int price;
@@ -22,4 +22,5 @@ public class Apple implements Serializable {
 		System.out.println("원산지 : " + country);
 		System.out.println("가격 : " + price);
 	}
+	
 }

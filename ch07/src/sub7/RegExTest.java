@@ -4,13 +4,13 @@ import java.util.regex.Pattern;
 
 /*
  * 날짜 : 2025/01/14
- * 이름 : 김소현
- * 내용 : Java 정규표현식 클래스 실습하기
+ * 이름 : 한결
+ * 내용 : Jave 정규표현식 클래스 실습하기
  */
+
 public class RegExTest {
-	
+
 	public static void main(String[] args) {
-		
 		
 		// 정규표현식
 		String pattern = "a[a-z]*";
@@ -47,7 +47,7 @@ public class RegExTest {
 		
 		for(String word : words) {
 			
-			System.out.print(word + " 문자와 일치하는 패턴 : ");
+			System.out.print(word + "문자와 일치하는 패턴 : ");
 			
 			for(String ptt : patterns) {
 				boolean result = Pattern.matches(ptt, word);
@@ -56,14 +56,12 @@ public class RegExTest {
 					System.out.print(ptt + ", ");
 				}
 			}
-			
-			System.out.print("\n");			
+			System.out.print("\n");
 		}
+		
+		
+		
+		
+		
 	}
 }
-
-
-
-
-
-

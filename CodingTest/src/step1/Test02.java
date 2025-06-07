@@ -1,14 +1,13 @@
 package step1;
-
-import java.util.Scanner;
-
 /*
  * 날짜 : 2025/01/03
- * 이름 : 김소현
- * 내용 : 백준 1단계 2번 A+B
+ * 이름 : 한결
+ * 내용 : 백준 1단계 2번
  */
+import java.util.Scanner;
+
 public class Test02 {
-	
+
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -17,9 +16,5 @@ public class Test02 {
 		int b = sc.nextInt();
 		
 		System.out.println(a+b);
-		
-		
-		
 	}
-
 }
